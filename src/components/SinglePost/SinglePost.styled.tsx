@@ -15,6 +15,11 @@ export const StyledTextContainer = styled.div`
 
 export const StyledMainImage = styled(Image)`
   border-radius: 30px;
+  @media screen and (max-width: 600px) {
+    border-radius: 0;
+    width: calc(100% + 20px);
+    margin: 0 -10px;
+  }
 `;
 
 export const StyledTitle = styled.h1`
@@ -22,6 +27,12 @@ export const StyledTitle = styled.h1`
   a {
     color: inherit;
     text-decoration: none !important;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 32px;
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 24px;
   }
 `;
 

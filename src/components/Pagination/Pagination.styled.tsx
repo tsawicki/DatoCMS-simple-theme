@@ -7,6 +7,9 @@ export const StyledContainer = styled.div`
   button {
     outline: none;
   }
+  @media screen and (max-width: 600px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const StyledPageLink = styled.button`
@@ -24,6 +27,10 @@ export const StyledPageLink = styled.button`
   &.current {
     color: white;
     background: #333;
+  }
+  @media screen and (max-width: 600px) {
+    height: 20px;
+    width: 20px;
   }
 `;
 
@@ -59,5 +66,8 @@ export const StyledNavigationButton = styled.button`
   font-weight: bold;
   &:disabled {
     opacity: 0.5;
+  }
+  @media screen and (max-width: 600px) {
+    height: 20px;
   }
 `;
