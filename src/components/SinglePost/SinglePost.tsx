@@ -41,7 +41,7 @@ export const SinglePost: React.FC<SinglePostProps> = ({ post, isSnippet }) => {
         {post.categories &&
           post.categories?.length > 0 &&
           post.categories.map((category: any) => (
-            <Link to={`/category/${category.slug}`}>
+            <Link to={`/category/${category.slug}`} key={category.slug}>
               <StyledCategory>{category.name}</StyledCategory>
             </Link>
           ))}
