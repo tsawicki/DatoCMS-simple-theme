@@ -23,7 +23,7 @@ export const StyledHeader = styled.div`
 
 export const StyledSubHeader = styled.div`
   width: 100%;
-  height: 100px;
+  height: 50px;
 `;
 
 export const StyledContentWrapper = styled.div`
