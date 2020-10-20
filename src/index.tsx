@@ -9,6 +9,7 @@ import { PostsList } from "./views/PostsList";
 import { Post } from "./views/Post";
 import { Category } from "./views/Category";
 import { Search } from "./views/Search";
+import { ScrollToTop } from "./helpers/ScrollToTop";
 
 const client = new GraphQLClient({
   url: "https://graphql.datocms.com/",
@@ -21,6 +22,7 @@ ReactDOM.render(
   <React.StrictMode>
     <ClientContext.Provider value={client}>
       <Router>
+        <ScrollToTop />
         <Layout>
           <Switch>
             <Route path="/search/:searchTerm">
